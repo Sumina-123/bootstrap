@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  body{
+      width: 100vw;
+      height: 100vh;
+      background: rgb(252,252,252);
+  }
+  header{
+      background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      min-height: 450px;
+  } 
+/*-------NAVBAR-------*/
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 15px; /* Added padding for better spacing */
+}
+
+/* Custom styles for navbar links */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Change to the desired color, e.g., white */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(240, 125, 125); /* Change color on hover */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(240, 125, 125); /* Change color for active link */
+}
+
+
+  .content-wrapper{
+      color: rgb(243, 236, 236);
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+      justify-content: center;
+      margin-top: 50px;
+  }
+  .content-wrapper img{
+      height:60px ;
+      width: 300px;
+  }
+  .content-wrapper h1{
+      font-size: 2.2rem;
+      font-weight: 100;
+      margin: 30px 0;
+      letter-spacing: 2px;
+  }
+  .content-wrapper h1 span{
+      font-weight: 600;
+  }
+  
+  .search-box{
+    width:30vw;
+    height:60px;
+    background-color: white;
+    border:none;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    padding-left: 20px;
+    outline:none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.search-btn{
+    width: 130px;
+    background-color: rgb(205, 181, 181);
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.order-section {
+    width: 85%;
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text within the section */
+}
+
+.card {
+    margin: 12px; /* Margin between cards */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid white; /* Border color */
+    transition: transform 0.5s; /* Smooth scaling on hover */
+    position: relative;
+ 
+}
+
+.card img {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Fixed height for all images */
+    border-radius: 8px; /* Rounded corners */
+    top: 0;
+    left: 0;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjust font size for title */
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 0.9rem; /* Adjust font size for text */
+    margin-bottom: 10px;
+}
+
+ 
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+   /*----------ORDER SECTION------------*/
+   .collections {
+    padding: 40px 0; /* Padding to add space above and below the section */
+}
+
+.card {
+    border-radius: 8px; /* Rounded corners for cards */
+    border: none; /* Remove default border */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale the card on hover */
+}
+
+.card img {
+    border-radius: 8px 8px 0 0; /* Round only the top corners of images */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Larger font for card title */
+    font-weight: bold; /* Bold title */
+}
+
+.card-text {
+    font-size: 1rem; /* Standard font size for card text */
+    color: gray; /* Slightly muted color for text */
+}
+
+   /*--------section footer-wrapper start---------*/
+.footer-wrapper {
+    background-color: white;
+    color: #353333;
+  }
+  
+  .footer-wrapper li {
+    padding-top: 8px;
+  }
+  
+  .footer-wrapper a {
+    text-decoration: none;
+    color: #575353;
+  }
+  
+  .footer_icon li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .select_box {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .border-top {
+    border-top: 1px solid #505050 !important;
+  }
+  
+  .footer-links2 {
+    padding-top: 45px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer-link-heading {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .footer-links2 {
+      padding-top: 2px;
+    }
+  }
+  
+  /*--------section footer-wrapper end---------*/
+  
+  /*......media query for small screen size....*/
+  @media only screen and (max-width: 768px){
+      .menu-icon{
+          display: block;
+      }
+      nav .nav-items ul li a{
+        color: white;
+      }
+      nav .app-link a,nav .nav-items ul{
+          display: none;
+      }
+  .content-wrapper h1{
+      font-size: 1.5rem;
+  }
+  .content-wrapper img{
+      width: 250px;
+  }
+  
+  .collection-card .card{
+      width: 100%;
+      margin: 20px;
+  }
+  .popular-location .box{
+      width: 100%;
+     
+  }
+  .app{
+      flex-direction: column;
+      
+  }
+  .app .app-image, .app .get-app{
+      width: 100%;
+  }
+  .app .submit input, .app .submit button{
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+  
+  }
+  .app-store{
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+  }
+  .app-store img{
+      width: 100px;
+  }
+  }
